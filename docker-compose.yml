@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  pusher:
+    build: .
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules:delegated
+      - ~/.zapierrc:/root/.zapierrc
+    command: 'bash -c "npm i && zapier push"'
+    environment:
+      ZAPIER_DEPLOY_KEY: ${ZAPIER_DEPLOY_KEY}
+
+volumes:
+  node_modules:
