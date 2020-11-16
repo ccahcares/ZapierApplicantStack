@@ -2,23 +2,33 @@
   "name": "applicant-stack",
   "version": "1.0.1",
   "description": "Connect ApplicantStack",
+  "repository": "ccahcares/zapier-applicantstack",
+  "homepage": "https://careconnectionsathome.com/",
+  "author": "Michael Mahoney <admin@careconnectionsathome.com>",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --recursive -t 10000",
-    "zapier-dev": "babel src --out-dir lib --watch",
-    "_zapier-build": "babel src --out-dir lib"
+    "zapier-build": "rm -rf lib && babel src --out-dir lib",
+    "zapier-dev": "rm -rf lib && babel src --out-dir lib --watch",
+    "prepare": "npm run zapier-build",
+    "pretest": "npm run zapier-build",
+    "test": "mocha --recursive lib/test --require babel-polyfill",
+    "_zapier-build": "npm run zapier-build"
   },
   "engines": {
     "node": ">=v12",
     "npm": ">=5.6.0"
   },
   "dependencies": {
+    "babel-polyfill": "6.26.0",
     "zapier-platform-core": "10.1.2"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.12.1",
+    "babel-plugin-add-module-exports": "0.2.1",
+    "babel-plugin-transform-regenerator": "6.26.0",
+    "babel-preset-env": "1.6.1",
     "mocha": "^8.2.1",
-    "should": "^13.2.0"
+    "should": "^13.2.1"
   },
   "private": true,
   "zapier": {
