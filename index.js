@@ -10,6 +10,8 @@ const updateHireCreate = require('./creates/update_hire_stage.js');
 const findHireSearch = require('./searches/find_hire.js');
 const allHiresSearch = require('./searches/all_hires.js');
 
+module.exports = require('./lib');
+
 module.exports = {
   version: require('./package.json').version,
   platformVersion: require('zapier-platform-core').version,

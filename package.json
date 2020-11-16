@@ -16,6 +16,7 @@
     "zapier-platform-core": "10.1.2"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.12.1",
     "mocha": "^8.2.1",
     "should": "^13.2.0"
   },
