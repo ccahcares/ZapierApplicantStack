@@ -4,7 +4,9 @@
   "description": "Connect ApplicantStack",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --recursive -t 10000"
+    "test": "mocha --recursive -t 10000",
+    "zapier-dev": "babel src --out-dir lib --watch",
+    "_zapier-build": "babel src --out-dir lib"
   },
   "engines": {
     "node": ">=v12",

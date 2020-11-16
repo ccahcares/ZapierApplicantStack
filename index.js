@@ -6,7 +6,7 @@ const jobDetailsTrigger = require('./triggers/job_details.js');
 const newCandidateTrigger = require('./triggers/new_candidate.js');
 const candidateDetailsTrigger = require('./triggers/candidate_details.js');
 const allHiresTrigger = require('./triggers/all_hires.js');
-const updateHireCreate = require('./creates/update_hire.js');
+const updateHireCreate = require('./creates/update_hire_stage.js');
 const findHireSearch = require('./searches/find_hire.js');
 const allHiresSearch = require('./searches/all_hires.js');
 

@@ -31,7 +31,7 @@ module.exports = {
       required: true,
       label: 'Domain',
       type: 'string',
-      helpText: 'The subdomain that ApplicantStack uses for your company',
+      helpText: 'The subdomain that ApplicantStack uses for your company. You can verify this information by going to [ApplicantStack Login](https://www.applicantstack.com/login/)',
       inputFormat: 'https://{{input}}.applicantstack.com',
       default: '{{process.env.DOMAIN}}',
     },
