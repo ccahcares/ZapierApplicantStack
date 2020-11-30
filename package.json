@@ -7,8 +7,8 @@
   "author": "Michael Mahoney <admin@careconnectionsathome.com>",
   "main": "index.js",
   "scripts": {
-    "zapier-build": "rm -rf lib && npx babel src --out-dir lib",
-    "zapier-dev": "rm -rf lib && npx babel src --out-dir lib --watch",
+    "zapier-build": "rm -rf lib && babel src --out-dir lib",
+    "zapier-dev": "rm -rf lib && babel src --out-dir lib --watch",
     "prepare": "npm run zapier-build",
     "pretest": "npm run zapier-build",
     "test": "mocha --recursive lib/test --require babel-polyfill",
@@ -35,5 +35,8 @@
   "private": true,
   "zapier": {
     "convertedByCLIVersion": "10.1.2"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.2.1"
   }
 }
