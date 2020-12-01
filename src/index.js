@@ -5,7 +5,7 @@ import newJobsTrigger from './triggers/new_jobs.';
 import jobDetailsTrigger from './triggers/job_details.js';
 import candidateDetailsTrigger from './triggers/candidate_details';
 import newCandidateTrigger from './triggers/new_candidate';
-import allHiresTrigger from './triggers/all_hires');
+import allHiresTrigger from './triggers/all_hires';
 import updateHireCreate from './creates/update_hire_stage';
 import findHireSearch from './searches/find_hire';
 import allHiresSearch from './searches/all_hires.js';
